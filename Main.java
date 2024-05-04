@@ -18,7 +18,7 @@ public class Main {
 
             for (int i = 0; i < people.length; i++) {
                 int newValue = MathUtils.add(people[i].getAge(), b);
-                String message = "Nowa wartość dla " + people[i].getName() + " to " + newValue;
+                String message = "Nowa wiek dla " + people[i].getName() + " to " + newValue;
                 
                 EmailMessenger emailMessenger = new EmailMessenger();
                 emailMessenger.sendMessage(message);
